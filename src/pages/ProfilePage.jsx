@@ -18,12 +18,12 @@ const ProfilePage = () => {
       setSelectedImg(base64Image);
 
       try {
-       const response = await fetch('http://localhost:5000/api/updateProfileImage', {
+       const response = await fetch('https://prescriptiontracker.onrender.com/api/updateProfileImage', {
         method: 'POST',
          headers: {
          'Content-Type': 'application/json',
             },
-           credentials: 'include', // ← ADD THIS LINE
+           credentials: 'include',
           body: JSON.stringify({
            userId: authUser._id,
            profilePic: base64Image,
