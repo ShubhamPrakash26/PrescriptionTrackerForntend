@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const BASE_URL = import.meta.env.VITE_API_BASE_URL; // Change if your backend runs on another URL
+const BASE_URL = "https://prescriptiontracker.onrender.com"; // Change if your backend runs on another URL
 
 export default function AuthPages() {
   const [isLogin, setIsLogin] = useState(true);
