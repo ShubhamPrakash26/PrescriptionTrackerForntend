@@ -31,7 +31,8 @@ export default function AuthPages() {
     try {
       const res = await fetch(`${BASE_URL}/api/auth/profile`, {
         method: 'GET',
-        credentials: 'include'
+        credentials: 'include',
+        withCredentials: true,
       });
 
       if (res.ok) {
